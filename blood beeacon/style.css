@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: system-ui, Segoe UI, Roboto, Arial;
+  background: #fafafa;
+  color: #222;
+}
+header {
+  background: #000;
+  padding: 12px;
+  text-align: center;
+}
+.logo {
+  max-width: 300px;
+  width: 90%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+#clock {
+  text-align: center;
+  font-weight: bold;
+  margin: 6px;
+}
+#controls {
+  padding: 10px;
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+select, button {
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid #c70000;
+  font-weight: 600;
+  cursor: pointer;
+}
+button {
+  background: #c70000;
+  color: #fff;
+}
+#container {
+  display: flex;
+  height: 78vh;
+  padding: 10px;
+  gap: 10px;
+}
+#map {
+  flex: 2;
+  border-radius: 8px;
+  height: 100%;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+}
+#results {
+  flex: 1;
+  overflow: auto;
+  background: #fff;
+  border-radius: 8px;
+  padding: 12px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.12);
+}
+.card {
+  border-radius: 8px;
+  padding: 8px;
+  margin-bottom: 8px;
+  background: #f6f6f6;
+  border: 1px solid #e6e6e6;
+  text-align: left;
+}
+.card.blink {
+  animation: blink 0.5s infinite alternate;
+  background: #ffcccc;
+}
+@keyframes blink {
+  from { background: #ff9999; }
+  to { background: #fff; }
+}
+#msg {
+  color: #b00;
+  text-align: center;
+  margin: 6px;
+  font-weight: 600;
+}
